@@ -407,13 +407,11 @@ public class DeclaracaoImportacaoService {
             }
 
             i = 0;
-
             // Interage com os pagamentos
             Pagamento[] pagamentos = new Pagamento[50];
             List<Element> pagamentosList = declaracoes.getChildren("pagamento");
 
             for (Element e : pagamentosList) {
-
                 pagamentos[i] = new Pagamento();
                 pagamentos[i].setAgenciaPagamento(e.getChildText("agenciaPagamento").trim());
                 pagamentos[i].setBancoPagamento(e.getChildText("bancoPagamento").trim());
