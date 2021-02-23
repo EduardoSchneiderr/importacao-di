@@ -407,7 +407,8 @@ public class DeclaracaoImportacaoService {
             }
 
             i = 0;
-            // Interage com os pagamentos
+
+            // Interage com os pagamentos da DI
             Pagamento[] pagamentos = new Pagamento[50];
             List<Element> pagamentosList = declaracoes.getChildren("pagamento");
 
